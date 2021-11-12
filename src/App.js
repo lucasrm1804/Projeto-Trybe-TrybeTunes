@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Content from './Components/Content';
 import Menu from './Components/Menu';
+import Routes from './Components/Routes';
 
 class App extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class App extends React.Component {
         <div>
           <p>TrybeTunes</p>
           <Menu />
-          <Content />
+          <Routes />
         </div>
       </BrowserRouter>
     );

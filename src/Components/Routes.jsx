@@ -8,7 +8,7 @@ import Profile from '../pages/Profile';
 import ProfileEdit from '../pages/ProfileEdit';
 import Search from '../pages/Search';
 
-class Component extends React.Component {
+class Routes extends React.Component {
   render() {
     return (
       <main>
@@ -27,4 +27,4 @@ class Component extends React.Component {
   }
 }
 
-export default Component;
+export default Routes;
