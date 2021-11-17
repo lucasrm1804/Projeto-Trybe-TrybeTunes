@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class MusicCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     name: '',
+  //   };
+  // }
 
   render() {
     const {
@@ -17,7 +17,7 @@ class MusicCard extends React.Component {
 
     return (
       <div>
-        <h3>{trackName}</h3>
+        <h3>{ trackName }</h3>
         <audio data-testid="audio-component" src={ previewUrl } controls>
           <track kind="captions" />
           O seu navegador não suporta o elemento
@@ -27,5 +27,10 @@ class MusicCard extends React.Component {
     );
   }
 }
+
+MusicCard.propTypes = {
+  trackName: PropTypes.string.isRequired,
+  previewUrl: PropTypes.string.isRequired,
+};
 
 export default MusicCard;
