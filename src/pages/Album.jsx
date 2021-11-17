@@ -49,6 +49,7 @@ class Album extends React.Component {
       <div data-testid="page-album">
         Pagina de album
         <Header />
+        <br />
         <img src={ artworkUrl100 } alt={ collectionName } />
         <h2 data-testid="album-name">{ collectionName }</h2>
         <h3 data-testid="artist-name">{ artistName }</h3>
@@ -60,6 +61,8 @@ class Album extends React.Component {
                 key={ music.trackId }
                 trackName={ music.trackName }
                 previewUrl={ music.previewUrl }
+                trackId={ music.trackId }
+                music={ music }
               />
             )))}
       </div>

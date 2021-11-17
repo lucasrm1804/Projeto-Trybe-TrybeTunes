@@ -31,7 +31,7 @@ class Header extends React.Component {
         { loadOn
           ? <span data-testid="header-user-name">{userName}</span>
           : <Carregando />}
-
+        <br />
         <Link data-testid="link-to-search" to="/search">Search</Link>
         <Link data-testid="link-to-favorites" to="/favorites">Favorites</Link>
         <Link data-testid="link-to-profile" to="/profile">Profile</Link>

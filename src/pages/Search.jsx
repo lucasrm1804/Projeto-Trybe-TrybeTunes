@@ -107,6 +107,7 @@ class Search extends React.Component {
             ? (
               <ul>
                 <span>{ returnMsg }</span>
+                <br />
                 {singerInfos.map((info) => (
                   <Link
                     to={ `/album/${info.collectionId}` }
